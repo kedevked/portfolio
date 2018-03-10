@@ -1,0 +1,93 @@
+
+@media screen and ( max-width: 1120px) {
+
+	main {
+		width: 100%;
+	}
+
+	.header__name, 
+	.header__description {
+		margin: 0.2cm;
+	}
+
+	.nav {
+		width: 0;
+		transform: translate(-200px, 0);
+	}
+
+	.featured-picture {
+		width: 100%; 
+	}
+
+	.feature-box {
+		width: 50%;
+	}
+
+	.feature-description {
+		width: 50%
+	}
+
+	.picture {
+		background-image: url("../img/programming-resized.jpeg");
+		width: 500px;
+		height: 200px;
+		margin: auto;
+	}
+
+	.content {
+		height: 175px;
+	}
+
+	.feature-work {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	
+	.title {
+		font-size: 26px;
+		 margin: 1em;
+	}
+
+	.header__name {
+		position: relative;
+		margin: 0;
+		text-align: center;
+	}
+
+	.picture {
+		background-image: url("../img/programming-small.PNG");
+		width: 300px;
+		height: 187px;
+		margin: auto;
+	}
+
+	.nav {
+		transform: translate(-200px, 0);
+	}
+
+	.content {
+		height: 175px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.feature-box {
+		width: 0%;
+	}
+
+	.feature-description {
+		width: 100%;
+	}
+
+	.feature-name {
+		font-size: 20px;
+	}
+
+	.feature-layout {
+		height: 1.5cm;
+	}
+
+}

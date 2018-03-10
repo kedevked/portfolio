@@ -20,11 +20,11 @@
 	}
 
 	.feature-box {
-		width: 50%;
+		width: 100%;
 	}
 
 	.feature-description {
-		width: 50%
+		width: 100%
 	}
 
 	.picture {
@@ -38,7 +38,7 @@
 		height: 175px;
 	}
 
-	.feature-work {
+	.featured-work {
 		text-align: center;
 	}
 
@@ -48,7 +48,7 @@
 	
 	.title {
 		font-size: 26px;
-		 margin: 1em;
+		margin: 1em;
 	}
 
 	.header__name {
@@ -73,21 +73,5 @@
 	}
 }
 
-@media screen and (max-width: 780px) {
-	.feature-box {
-		width: 0%;
-	}
-
-	.feature-description {
-		width: 100%;
-	}
-
-	.feature-name {
-		font-size: 20px;
-	}
-
-	.feature-layout {
-		height: 1.5cm;
-	}
 
 }

@@ -42,6 +42,20 @@
 		text-align: center;
 	}
 
+	.myself-image {
+		text-align: center;
+		width: 100%;
+	}
+
+	.myself-description {
+		text-align: center;
+		width: 100%;
+	}
+
+	.myself-description p {
+		width: 100%
+	}
+
 }
 
 @media screen and (max-width: 500px) {

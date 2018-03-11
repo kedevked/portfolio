@@ -23,6 +23,10 @@ main {
 	width: 85%;
 }
 
+/*
+*header
+*/
+
 .header {
 	border-bottom: 2px solid blue;
 	text-align: right;	
@@ -42,6 +46,10 @@ main {
 .header__description {
 	font-size: 26px
 }
+
+/*
+*nav
+*/
 
 nav {
 	background-color: white;
@@ -126,11 +134,42 @@ Content
 
 .feature-name {
 	text-transform: uppercase;
-	font-size: 28px
+	font-size: 20px
 }
 
 .title {
 	font-weight: normal;
     font-size: 30px;
     margin: 1cm;
+}
+
+/*
+*Description
+*/
+
+.myself {
+
+}
+
+.myself-layout {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.myself-image {
+	width: 20%;
+}
+
+.myself-description {
+	width: 80%
+}
+
+.myself-description p {
+	width: 65%
+}
+
+#profile {
+	clip-path: circle(100px at 50% 50%);
+	width: 200px;
+	height: 200px;
 }

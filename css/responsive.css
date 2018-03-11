@@ -5,15 +5,23 @@
 		width: 100%;
 	}
 
+	.nav {
+		width: 0;
+		transform: translate(-200px, 0);
+	}
+
+	/*
+    *header
+	*/
+
 	.header__name, 
 	.header__description {
 		margin: 0.2cm;
 	}
 
-	.nav {
-		width: 0;
-		transform: translate(-200px, 0);
-	}
+	/*
+    *content
+	*/
 
 	.featured-picture {
 		width: 100%; 
@@ -32,6 +40,7 @@
 		width: 500px;
 		height: 200px;
 		margin: auto;
+		margin-top: 1.5em;
 	}
 
 	.content {
@@ -41,6 +50,14 @@
 	.featured-work {
 		text-align: center;
 	}
+
+	.title {
+		text-align: center;
+	}
+
+	/*
+	*description
+	*/
 
 	.myself-image {
 		text-align: center;
@@ -66,9 +83,7 @@
 	}
 
 	.header__name {
-		position: relative;
 		margin: 0;
-		text-align: center;
 	}
 
 	.picture {
@@ -76,6 +91,7 @@
 		width: 300px;
 		height: 187px;
 		margin: auto;
+		margin-top: 1.5em;
 	}
 
 	.nav {

@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -11,11 +12,20 @@ body {
   color: #424242;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0; 
 }
 
-header, nav, footer, section, article, div {
+header,
+nav,
+footer,
+section,
+article,
+div {
   box-sizing: border-box;
 }
 
@@ -45,15 +55,25 @@ main {
 
 .header__logo {
 	height: 47px;
+	margin-bottom: 22px;
     margin-right: 1em;
-    vertical-align: top;
     margin-top: -31px;
+    transform: scale(0.7);
     text-align: initial;
-    margin-bottom: 22px;
+    vertical-align: top;
 }
 
 .header__description {
 	font-size: 26px
+}
+
+.header__menu {
+  display: none;
+}
+
+.header-layout {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /*

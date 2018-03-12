@@ -1,4 +1,20 @@
+@media screen and ( min-width: 1120px) {
+	.header__name {
+		margin-top: initial;
+	}
 
+	.header-layout-logo {
+		width: 18%;
+		order: 1
+	}
+
+	.header-layout-ref {
+		text-align: right;
+		width: 101%;
+		margin-top: -24px;
+		order: 2;
+	}
+}
 @media screen and ( max-width: 1120px) {
 
 	main {
@@ -10,6 +26,20 @@
 		transform: translate(-200px, 0);
 	}
 
+  .nav.open {
+  	z-index: 10;
+  	background-color: #e4e4e4;
+  	width: 300px;
+  	position: absolute;
+  	/* This trasform moves the drawer off canvas. */
+  	-webkit-transform: translate(-300px, 0);
+  	transform: translate(-300px, 0);
+  	/* Optionally, we animate the drawer. */
+  	transition: transform 0.3s ease;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
 	/*
     *header
 	*/
@@ -17,6 +47,37 @@
 	.header__name, 
 	.header__description {
 		margin: 0.2cm;
+	}
+
+	.header__menu {
+	  display: inline-block;
+	  position: absolute;
+	  right: 0;
+	  padding: 0.2em;
+	  margin-top: -38px;
+	}
+
+	.hamburger-icon {
+	  width: 32px;
+	  fill: #E0E0E0;
+	}
+
+	.header-layout-logo {
+		width: 50%;
+		order: 1;
+		/*margin-bottom: 12px;*/
+	}
+
+	.header-layout-ref {
+		width: 94%;
+		order: 2;
+		margin-top: -38px;
+		text-align: right;	
+	}
+
+	.header-layout-menu {
+		width: 100%;
+		order: 3;
 	}
 
 	/*
@@ -100,5 +161,29 @@
 
 	.content {
 		height: 175px;
+	}
+
+	.header-layout-logo {
+		width: 15%;
+		order: 1;
+		margin-bottom: 12px;
+	}
+
+	.header-layout-ref {
+		width: 75%;
+		order: 2;
+		text-align: center;
+		margin-bottom: 17px;
+		margin-top: 12px;
+	}
+
+	.header-layout-menu {
+		width: 10%;
+		order: 3;
+	}
+
+	.header__name,
+	.header__description {
+		font-size: 20px;
 	}
 }

@@ -10,10 +10,19 @@
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__logo"><img src="./img/logo.png" alt="logo"></div>
-    <div class="header__name">Edoh KODJO</div>
-    <div class="header__description">Full-Stack Developper</div>
+  <header class="header header-layout">
+    <div class="header__logo header-layout-logo"><img src="./img/logo.png" alt="logo"></div>
+    <div class="header-layout-menu">
+      <a id="menu" class="header__menu">
+      <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+      </svg>
+    </a>
+    </div>
+    <div class="header-layout-ref">
+      <div class="header__name">Edoh KODJO</div>
+      <div class="header__description">Full-Stack Developper</div>
+    </div>
   </header>
 
   <div class="layout">
@@ -92,8 +101,21 @@
     </main>
   </div>
 
+<script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
 
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
 
-  <footer>
-  </footer>
+    </script>
 </body>
